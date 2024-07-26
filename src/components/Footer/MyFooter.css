@@ -1,0 +1,38 @@
+.bg-svg {
+    height: auto !important;
+    border-radius: 0 !important;
+    background-image: url('../../assets/bgFooter.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.dog {
+    position: absolute;
+    top: -2%;
+    right: 0;
+    transform: translateY(-50%);
+}
+  
+.dog-image {
+    display: block;
+    width: 90px;
+    height: auto;
+}
+.paws {
+    position: absolute;
+    bottom: -41%;
+    left: -5%;
+    transform: translateY(-50%);
+}
+
+.paws-image {
+    display: block;
+    width: 300px;
+    height: auto;
+    overflow-y: hidden;
+}
+@media (max-width: 640px) {
+    .paws {
+        bottom: -30%;
+    }
+}
