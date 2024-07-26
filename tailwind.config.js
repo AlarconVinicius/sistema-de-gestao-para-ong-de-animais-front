@@ -9,13 +9,19 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily:{
+        'Nunito': 'Nunito'
+      },
       colors:{
-        'primaryBlue': '#223287',       
-        'lightBlue': '#5CA2DE',       
-        'brandOrange': '#F9A870',       
-        'lightGray': '#F6F6F6',       
-        'darkGray': '#737373',   
-        'darkestGray': '#18191Fs',   
+        'primaryPurple': '#593B9A',
+        'secondaryPurple': '#7259A6',
+        'primaryOrange': '#FF9F23',
+        'secondaryOrange': '#FE9F5E',
+        'neutralBlack1': '#1A1A1A',
+        'neutralGrey1': '#3A3A35',
+        'neutralGrey2': '#737373',
+        'neutralGrey3': '#AFAFAF',
+        'neutralWhite1': '#F6F6F6' 
       }
     },
   },
