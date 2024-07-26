@@ -1,12 +1,18 @@
+import './App.css';
 import { useState } from 'react'
-import './App.css'
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar/Navbar'
+import MyFooter from './components/Footer/MyFooter';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <Navbar />
+    <div>
+      <Navbar />
+      <Outlet />
+      <MyFooter />
+    </div>
   )
 }
 
