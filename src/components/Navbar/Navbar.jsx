@@ -38,7 +38,7 @@ const Navbar = () => {
 
     return (
     <header className={`w-full fixed bg-white top-0 left-0 right-0 shadow-md ${isSticky ? "shadow-lg bg-white duration-300" : ""}`} >
-        <nav className={`lg:container mx-auto py-4 lg:px-10 px-4 ${isSticky ? "stick top-0 lef-0 right-0 bg-white duration-300" : ""}`}>
+        <nav className={`max-w-screen-xl mx-auto py-4 lg:px-10 px-4 ${isSticky ? "stick top-0 lef-0 right-0 bg-white duration-300" : ""}`}>
             <div className='flex justify-between items-center text-base gap-8'>
                 <Link to='/' className='flex items-center space-x-3'><img src={logo} alt='' className='inline-block items-center h-9 md:h-8' /></Link>
                 <ul className='lg:flex space-x-5 lg:space-x-10 hidden'>
