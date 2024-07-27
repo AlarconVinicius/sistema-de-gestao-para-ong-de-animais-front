@@ -9,10 +9,10 @@ const MyFooter = () => {
     <Footer container className='bg-svg rounded-none'>
       <div className="lg:container mx-auto py-4 lg:px-14 px-4 relative">
         <div className='dog'>
-          <img src={dogImg} alt="Dog" className='dog-image z-50'/>
+          <img src={dogImg} alt="Dog" className='dog-image'/>
         </div>
         <div className='paws'>
-          <img src={pawsImg} alt="Dog" className='paws-image z-50'/>
+          <img src={pawsImg} alt="Paws" className='paws-image'/>
         </div>
         <div className="grid w-full justify-center sm:flex sm:justify-center md:flex md:grid-cols-1">
           <div className="grid grid-cols-1 gap-8 sm:mt-12 sm:grid-cols-3 sm:gap-6">

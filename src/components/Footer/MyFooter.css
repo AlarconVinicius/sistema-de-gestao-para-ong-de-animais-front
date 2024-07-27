@@ -29,7 +29,6 @@
     display: block;
     width: 300px;
     height: auto;
-    overflow-y: hidden;
 }
 @media (max-width: 640px) {
     .paws {
