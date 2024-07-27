@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header/Header';
+import FilterPet from '../components/Filter/FilterPet'; 
 import CardPet from '../components/Card/CardPet';
 
 const QueroAdotar = () => {
@@ -43,8 +44,8 @@ const QueroAdotar = () => {
                     Não encontrou seu pet aqui ainda? Não se preocupe! Entre em contato com uma das <Link to="/ongs-protetores" className='font-bold'>ONGs parceiras</Link> para obter mais informações sobre outros pets disponíveis para adoção.<br />
                     Vamos juntos transformar a vida desses peludinhos com amor e carinho. Adote e faça a diferença!
                 </p>
-                
-                <div className='justify-items-center grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-5 overflow-x-hidden'>
+                <FilterPet />
+                <div className='mt-16 justify-items-center grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-5 overflow-x-hidden'>
                     {
                         allPets.slice(0, visibleCount).map(pet => 
                             <CardPet key={pet.id} pet={pet} />
