@@ -17,6 +17,8 @@ export default {
         'secondaryPurple': '#7259A6',
         'primaryOrange': '#FF9F23',
         'secondaryOrange': '#FE9F5E',
+        'primaryBlue': '#2C55A6',
+        'primaryPink': '#e3879a',
         'neutralBlack1': '#1A1A1A',
         'neutralGrey1': '#3A3A35',
         'neutralGrey2': '#737373',
