@@ -8,7 +8,9 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 main {
-  padding-top: 80px; /* Ajuste conforme a altura da sua Navbar */
+  padding-top: 80px;
+  padding-bottom: 20px;
+  background-color: #F6F6F6; /* Ajuste conforme a altura da sua Navbar */
 }
 header {
   z-index: 1001 !important;
