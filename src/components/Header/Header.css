@@ -1,0 +1,42 @@
+.bg-header-svg {
+    height: auto !important;
+    border-radius: 0 !important;
+    background-image: url('../../assets/bgHeader.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.my-breadcrumb {
+    position: absolute;
+    top: 65%;
+    left: 5%;
+}
+.my-breadcrumb .breadcrumb-item a {
+    color: #593B9A !important;
+}
+
+.my-breadcrumb .breadcrumb-item-active  {
+    color: #593B9A !important;
+    font-weight: 800 !important;
+}
+.cat {
+    position: absolute;
+    top: 25%;
+}
+.paws2 {
+    position: absolute;
+    bottom: -32%;
+    right: -2%;
+    transform: translateY(-50%);
+}
+
+.paws2-image {
+    display: block;
+    height: auto;
+}
+.dog {
+    position: absolute;
+    top: -2%;
+    right: 0;
+    transform: translateY(-50%);
+}
