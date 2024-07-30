@@ -1,9 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+:root {
+  --scroolBarColor: #FE9F5E; 
+  --scroolBarBg: #F6F6F6; 
+}
+
 * {
   padding: 0;
   margin: 0;
 }
+
+/* Definições da barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroolBarColor);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scroolBarBg);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
