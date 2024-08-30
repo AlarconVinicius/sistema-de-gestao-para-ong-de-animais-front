@@ -57,7 +57,7 @@ const Navbar = () => {
                 {/* btn for large devices */}
                 <div className='flex md:order-2 space-x-4 md:space-x-4'>
                     <div className='space-x-4 flex items-center'>
-                        <Link to="/entrar-cadastrar" className='hidden lg:flex text-primaryPurple text-medium btn-primary bg-transparent border-2 border-primaryPurple'>Entrar/Cadastrar</Link>
+                        <Link to="/pre-cadastro" className='hidden lg:flex text-primaryPurple text-medium btn-primary bg-transparent border-2 border-primaryPurple'>Entrar/Cadastrar</Link>
                         <Link to="/quero-adotar" className='btn-primary'>Quero adotar</Link>
                     </div>
                     {/* menu btn for only mobile devices */}

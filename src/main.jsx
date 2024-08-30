@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import QueroAdotar from './routes/QueroAdotar.jsx';
 import QueroAjudar from './routes/QueroAjudar.jsx';
 import ErrorPage from './routes/ErrorPage.jsx';
+import Cadastro from './routes/Cadastro.jsx';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: '/quero-ajudar',
         element: <QueroAjudar />
+      },
+      {
+        path: '/pre-cadastro',
+        element: <Cadastro />
       }
     ]
   }
