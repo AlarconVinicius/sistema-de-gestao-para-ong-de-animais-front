@@ -84,7 +84,7 @@ const QueroAdotar = () => {
             <div><Header breadcrumbItems={breadcrumbItems} /></div>
             <div className='md:px14 px-4 py-16 max-w-screen-xl mx-auto' id='quero-adotar'>
                 <h1 className='mb-3 text-center text-[32px] font-Nunito font-extrabold text-primaryPurple'>Campanha de Adoção</h1>
-                <p className='mb-16 text-center text-[20px] font-Nunito text-primaryPurple'><span className='font-bold'>
+                <p className='mb-16 text-center text-[20px] font-Nunito text-primaryPurple max-w-4xl mx-auto px-4'><span className='font-bold'>
                     Uma seleção especial de peludinhos que buscam um lar para chamar de seu.</span><br />
                     Não encontrou seu pet aqui ainda? Não se preocupe! Entre em contato com uma das <Link to="/ongs-protetores" className='font-bold'>ONGs parceiras</Link> para obter mais informações sobre outros pets disponíveis para adoção.<br />
                     Vamos juntos transformar a vida desses peludinhos com amor e carinho. Adote e faça a diferença!
