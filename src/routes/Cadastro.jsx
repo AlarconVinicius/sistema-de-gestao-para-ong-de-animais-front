@@ -15,7 +15,7 @@ const Cadastro = () => {
     return (
         <div className='bg-neutralWhite1'>
             <div><Header breadcrumbItems={breadcrumbItems} /></div>
-            <div className='md:px14 px-4 py-16 max-w-screen-xl mx-auto' id='quero-adotar'>
+            <div className='md:px14 px-4 py-16 max-w-screen-xl mx-auto' id='pre-cadastro'>
                 <h1 className='mb-3 text-center text-[32px] font-Nunito font-extrabold text-primaryPurple'>Formulário de pré-cadastro</h1>
 
                 <div className="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg">
