@@ -57,7 +57,7 @@ const Navbar = () => {
                 {/* btn for large devices */}
                 <div className='flex md:order-2 space-x-4 md:space-x-4'>
                     <div className='space-x-4 flex items-center'>
-                        <Link to="/pre-cadastro" className='hidden lg:flex text-primaryPurple text-medium btn-primary bg-transparent border-2 border-primaryPurple'>Entrar/Cadastrar</Link>
+                        <Link to="/entrar" className='hidden lg:flex text-primaryPurple text-medium btn-primary bg-transparent border-2 border-primaryPurple'>Entrar/Cadastrar</Link>
                         <Link to="/quero-adotar" className='btn-primary'>Quero adotar</Link>
                     </div>
                     {/* menu btn for only mobile devices */}
@@ -85,7 +85,7 @@ const Navbar = () => {
                         </NavLink>
                     )
                 }
-                <a href="/entrar-cadastrar" className='pt-6 mt-16 block text-base text-white hover:text-brandOrange first:font-medium'>Entrar/Cadastrar</a>
+                <a href="/entrar" className='pt-6 mt-16 block text-base text-white hover:text-brandOrange first:font-medium'>Entrar/Cadastrar</a>
             </div>
         </nav>
     </header>

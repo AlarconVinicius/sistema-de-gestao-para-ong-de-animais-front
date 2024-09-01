@@ -32,7 +32,7 @@ const MyFooter = () => {
             <div>
               <Footer.Title title="Divulgue um animal" className='text-neutralWhite1' />
               <Footer.LinkGroup col>
-                <Footer.Link href="/entrar-cadastrar" className='text-neutralWhite1'>Cadastrar um animal</Footer.Link>
+                <Footer.Link href="/entrar" className='text-neutralWhite1'>Cadastrar um animal</Footer.Link>
               </Footer.LinkGroup>
             </div>
           </div>

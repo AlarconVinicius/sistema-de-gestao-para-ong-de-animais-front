@@ -7,6 +7,9 @@ import QueroAdotar from './routes/QueroAdotar.jsx';
 import QueroAjudar from './routes/QueroAjudar.jsx';
 import ErrorPage from './routes/ErrorPage.jsx';
 import Cadastro from './routes/Cadastro.jsx';
+import QuemSomos from './routes/QuemSomos.jsx';
+import ONGsProtetores from './routes/ONGsProtetores.jsx';
+import Entrar from './routes/Entrar.jsx';
 
 const router = createBrowserRouter([
   {
@@ -23,8 +26,23 @@ const router = createBrowserRouter([
         element: <QueroAdotar />
       },
       {
+        path: '/quem-somos',
+        element: <QuemSomos />
+      },
+      {
         path: '/quero-ajudar',
         element: <QueroAjudar />
+      },
+      {
+        path: '/ongs-protetores',
+        element: <ONGsProtetores />
+      },
+      {
+        path: '/blog'
+      },
+      {
+        path: '/entrar',
+        element: <Entrar />
       },
       {
         path: '/pre-cadastro',
