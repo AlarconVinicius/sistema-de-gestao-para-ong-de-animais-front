@@ -66,18 +66,7 @@ const CardONG = ({ ong }) => {
         <p className="text-neutralBlack1 text-[10px]">{ong.endereco}</p>
       </div>
     </div>
-
-      {/* <div id="card-ong" className="bg-white rounded-lg mb-5 w-[270px] h-[320px] overflow-hidden shadow-md">
-          <img src={ong.image} alt="" className="w-full h-[200px] cursor-pointer img-card" onClick={() => handleModalOpen(ong)} />
-          <div className="px-4 py-4 flex flex-col items-start">
-            <a href={ong.link} target="_blank">
-              <p className="text-neutralBlack1 mb-4 text-[14px] flex items-center">
-                  {ong.nome}
-              </p>
-            </a>
-              <p className="text-neutralBlack1 text-[10px]">{ong.endereco}</p>
-          </div>
-      </div> */}
+    
       <Modal
         dismissible
         show={openModal}
