@@ -23,6 +23,15 @@ const CardPet = ({ pet }) => {
     setModalPet(pet);
     window.history.pushState(null, "", `?petId=${pet.id}`);
   };
+  const handleModalClose = () => {
+    setOpenModal(false);
+    clearPetIdFromUrl();
+  };
+  const clearPetIdFromUrl = () => {
+    const url = new URL(window.location);
+    url.searchParams.delete('petId');
+    window.history.replaceState(null, "", url.toString());
+  };
   const handleShare = () => {
     const shareUrl = `${window.location.origin}${window.location.pathname}?petId=${modalPet.id}`;
     navigator.clipboard.writeText(shareUrl).then(() => {
@@ -58,7 +67,7 @@ const CardPet = ({ pet }) => {
       show={openModal}
       position="center"
       size="3xl"
-      onClose={() => setOpenModal(false)}
+      onClose={handleModalClose}
       className='custom-modal'
     >
       <Modal.Header className='custom-modal-header'/>
@@ -115,7 +124,7 @@ const CardPet = ({ pet }) => {
               </button>
                 <button 
                 className="btn-primary bg-transparent border-2 border-secondaryOrange text-secondaryOrange w-28 sm:w-28 mr-2" 
-                onClick={() => setOpenModal(false)}
+                onClick={() => handleModalClose()}
                 >
                 Voltar
                 </button>
