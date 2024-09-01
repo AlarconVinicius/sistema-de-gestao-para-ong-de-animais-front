@@ -2,7 +2,7 @@ import { React, useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { IoMale, IoFemale, IoShareSocial } from "react-icons/io5";
 import { Modal } from 'flowbite-react';
-import './CardPet.css'
+import './Card.css'
 
 const CardPet = ({ pet }) => {
   const [openModal, setOpenModal] = useState(false);

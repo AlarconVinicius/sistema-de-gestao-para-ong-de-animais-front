@@ -7,8 +7,16 @@
     justify-content: end;
     border: none;
 }
+.custom-modal-footer-ong{
+    display: flex;
+    justify-content: start;
+    border: none;
+}
 .custom-modal-header {
     border: none !important;
     margin: 0;
     padding: 0
+}
+#card-ong img:hover {
+    background: rgba(0, 0, 0, 0.73);
 }
