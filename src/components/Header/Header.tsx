@@ -1,11 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './Header.css';
-import { Breadcrumb } from "flowbite-react";
-import catImg from "../../assets/cat.svg";
-import pawsImg from "../../assets/patas2.svg";
+import { Breadcrumb } from 'flowbite-react';
+import { BreadcrumbModel } from '../../models/ComponentsModels';
+import catImg from '../../assets/cat.svg';
+import pawsImg from '../../assets/patas2.svg';
 
-const Header = ({ breadcrumbItems }) => {
+const Header: React.FC<{ breadcrumbItems: BreadcrumbModel[] }> = ({ breadcrumbItems }) => {
   return (
     <div>
       <div className='w-full bg-header-svg overflow-x-hidden'>
@@ -19,11 +19,11 @@ const Header = ({ breadcrumbItems }) => {
           <Breadcrumb className="bg-transparent my-breadcrumb">
             {breadcrumbItems.map((item, index) => (
               item.href ? (
-                <Breadcrumb.Item href={item.href} key={index}  className='breadcrumb-item'>
+                <Breadcrumb.Item href={item.href} key={index} className='breadcrumb-item'>
                   {item.label}
                 </Breadcrumb.Item>
               ) : (
-                <Breadcrumb.Item key={index}  className='breadcrumb-item-active'>
+                <Breadcrumb.Item key={index} className='breadcrumb-item-active'>
                   {item.label}
                 </Breadcrumb.Item>
               )
@@ -33,15 +33,6 @@ const Header = ({ breadcrumbItems }) => {
       </div>
     </div>
   );
-}
-
-Header.propTypes = {
-  breadcrumbItems: PropTypes.arrayOf(
-    PropTypes.shape({
-      label: PropTypes.string.isRequired,
-      href: PropTypes.string,
-    })
-  ).isRequired,
 };
 
 export default Header;

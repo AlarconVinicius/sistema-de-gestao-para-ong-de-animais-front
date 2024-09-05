@@ -1,10 +1,10 @@
 import './MyFooter.css';
 import React from 'react';
-import { Footer } from "flowbite-react";
-import dogImg from "../../assets/dog.svg";
-import pawsImg from "../../assets/patas.svg";
+import { Footer } from 'flowbite-react';
+import dogImg from '../../assets/dog.svg';
+import pawsImg from '../../assets/patas.svg';
 
-const MyFooter = () => {
+const MyFooter: React.FC = () => {
   return (
     <Footer container className='bg-svg rounded-none'>
       <div className="lg:container mx-auto py-4 lg:px-14 px-4 relative">
@@ -39,11 +39,11 @@ const MyFooter = () => {
         </div>
         <Footer.Divider />
         <div className="w-full sm:flex sm:items-center sm:justify-center">
-          <Footer.Copyright href="https://www.linkedin.com/in/vinicius-alarcon/" by="Todos os direitos reservados. Vinícius Alarcon" year={2024}  className='text-neutralWhite1'/>
+          <Footer.Copyright href="https://www.linkedin.com/in/vinicius-alarcon/" by="Todos os direitos reservados. Vinícius Alarcon" year={2024} className='text-neutralWhite1'/>
         </div>
       </div>
     </Footer>
-  )
-}
+  );
+};
 
-export default MyFooter
+export default MyFooter;
